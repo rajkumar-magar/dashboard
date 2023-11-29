@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>    
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark" id="Sidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">Uranus Tech <sup></sup></div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" >
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#">
+                    <i class="fa-sharp fa-solid fa-chart-pie"></i>
+                    <span>Analytics</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>General Setup</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                General
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#">
+                    <i class="fa-sharp fa-solid fa-circle-info"></i>
+                    <span>Help Info</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#">
+                    <i class="fas fa-sign-out-alt "></i>
+                    <span>LOG OUT</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+     
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                   
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button">
+                                <span class="mr-2 d-none d-lg-inline text-gray-900 small">Ishwar Chaudhary</span>
+                                <img class="img-profile rounded-circle"
+                                    src="assets//images/undraw_profile.svg">
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+               
+                <div class="container">
+
+                    <div class="card o-hidden border-0 shadow-lg my-10">
+                        <div class="card-body p-0">
+                           
+                            <div class="col">
+                                <div class="col-lg-16">
+                                    <div class="p-5">
+                                        <div class="text-left">
+                                            <h1 class="h4 text-gray-900 mb-4">Company Information</h1>
+                                        </div>
+                                        <form class="user">
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                                    <input type="text" class="form-control form-control-user" id="name"
+                                                        placeholder="Name">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control form-control-user" id="address"
+                                                        placeholder="Address">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                                    <input type="password" class="form-control form-control-user"
+                                                        id="contact" placeholder="Contact">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="password" class="form-control form-control-user"
+                                                        id="contactPerson" placeholder="Contact Person">
+                                                </div>
+                                            </div class= "form-group col">
+                                            <div class="col-sm-2 mb-2 mb-sm-0 mr-auto ml-auto ">
+                                            <a href="#" class="btn btn-primary btn-user btn-block">
+                                                Save
+                                            </a>
+                                            </div>
+                                    </div>
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header py-3">
+                                            <h6 class="m-0 font-weight-bold text-primary">Company List</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Address</th>
+                                                            <th>Contact</th>
+                                                            <th>Contact Person</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Uranus Tech Pvt.Ltd</td>
+                                                            <td>Bijulibazar, 10, Kathmandu</td>
+                                                            <td>+977-01-5244670</td>
+                                                            <td>Nirajan Rijal</td>
+                                                            <td>
+                                                                <a class="" href="#">
+                                                                    <i class="fa-sharp fa-solid fa-pen " style="color:blue"></i>
+                                                                </a>
+                                                                <a class="" href="#">
+                                                                    <i class="fa-sharp fa-solid fa-trash p-2 " style="color:red"></i>
+                                                                </a>
+                                                                <a class="" href="#">
+                                                                    <i class="fa-sharp fa-solid fa-eye" style="color:gray"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                         </div>
+                                 </div>
+                        </div>
+                    </div>
+            
+    
+                
+                <script src="index.js"></script>
+                <script src="https://kit.fontawesome.com/63f97dc07a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
